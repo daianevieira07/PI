@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Projeto Integrador</title>
+        <link rel="stylesheet" href="style.css" />
+	</head>	
+	<script>
+	var pages = {
+		'home' :`Bem vindos! <br/><br/>`,
+		'aboutus' : `Conheça a professora <br/><br/>`,
+		'services' : `Aqui você encontra:  <br/><br/>`,
+		'contact' : `Vamos conversar  <br/><br/>`,
+	};
+
+	function getPageContent(page){
+		var contentToReturn;
+		switch(page){
+			case 'home':
+				contentToReturn = pages.home;
+				break;
+			case 'aboutus':
+				contentToReturn = pages.aboutus;
+				break;
+			case 'services':
+				contentToReturn = pages.services;
+				break;
+			case 'contact':
+				contentToReturn = pages.contact;
+				break;
+			default:
+				contentToReturn = pages.home;
+				break;				
+		}
+		document.getElementById('content').innerHTML = contentToReturn; 
+	}
+	</script> 
+<body onload="getPageContent('home')">
+    
+    <div style="width:100%; float: none;background: #eee;height: 100%;">
+		<ul>
+			<li style="line-height: 70px;">
+				<a href="#" onclick="getPageContent('home')">
+					Home
+				</a>
+			</li>
+			<li style="line-height: 70px;">
+				<a href="#" onclick="getPageContent('aboutus')">
+					About Us
+				</a>
+			</li>
+			<li style="line-height: 70px;">
+				<a href="#" onclick="getPageContent('services')">
+					Services
+				</a>
+			</li>
+			<li style="line-height: 70px;">
+				<a href="#" onclick="getPageContent('contact')">
+					Contact
+				</a>
+			</li>
+		</ul>
+
+	</div>
+<div style="width: 100%;float:inline-start; background: #999;color:#fff; height: 500%;font-size: 50px;"><p style="margin-left: 70px;" id="content"><p></div>
+
+
+    <script type="module" src="/spa.js"></script>
+    </body>
+    </html>
