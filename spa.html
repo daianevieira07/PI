@@ -35,35 +35,37 @@
 		document.getElementById('content').innerHTML = contentToReturn; 
 	}
 	</script> 
+
 <body onload="getPageContent('home')">
+   
+            <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#" onclick="getPageContent('home')">
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="getPageContent('aboutus')">
+                        A professora
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="getPageContent('services')">
+                        Nosso Trabalho
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="getPageContent('contact')">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+            <iframe src="https://giphy.com/embed/WTRvyrneui9L58fJcb" width="30%" height="30%" style="position:relative;" ;frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/stickers/transparent-estudar-studyanaluiza-WTRvyrneui9L58fJcb"></a></p>
+            </nav>
+ 
+    <div class="body"><p style="margin-left: 90px;" id="content"><p></div>
     
-    <div style="width:100%; float: none;background: #eee;height: 100%;">
-		<ul>
-			<li style="line-height: 70px;">
-				<a href="#" onclick="getPageContent('home')">
-					Home
-				</a>
-			</li>
-			<li style="line-height: 70px;">
-				<a href="#" onclick="getPageContent('aboutus')">
-					About Us
-				</a>
-			</li>
-			<li style="line-height: 70px;">
-				<a href="#" onclick="getPageContent('services')">
-					Services
-				</a>
-			</li>
-			<li style="line-height: 70px;">
-				<a href="#" onclick="getPageContent('contact')">
-					Contact
-				</a>
-			</li>
-		</ul>
-
-	</div>
-<div style="width: 100%;float:inline-start; background: #999;color:#fff; height: 500%;font-size: 50px;"><p style="margin-left: 70px;" id="content"><p></div>
-
 
     <script type="module" src="/spa.js"></script>
     </body>
