@@ -1,72 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Projeto Integrador</title>
-        <link rel="stylesheet" href="style.css" />
-	</head>	
-	<script>
-	var pages = {
-		'home' :`Bem vindos! <br/><br/>`,
-		'aboutus' : `Conheça a professora <br/><br/>`,
-		'services' : `Aqui você encontra:  <br/><br/>`,
-		'contact' : `Vamos conversar  <br/><br/>`,
-	};
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="getPageContent('home')">
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="#" onclick="getPageContent('home')">
+            Início
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="getPageContent('aboutus')">
+            A professora
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="getPageContent('services')">
+            Nosso Trabalho
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="getPageContent('contact')">
+            Entre em Contato
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="body"><p style="margin-left: 90px;" id="content"></p></div>
+    <script src="spa.js"></script>
+  </body>
+  </html>
 
-	function getPageContent(page){
-		var contentToReturn;
-		switch(page){
-			case 'home':
-				contentToReturn = pages.home;
-				break;
-			case 'aboutus':
-				contentToReturn = pages.aboutus;
-				break;
-			case 'services':
-				contentToReturn = pages.services;
-				break;
-			case 'contact':
-				contentToReturn = pages.contact;
-				break;
-			default:
-				contentToReturn = pages.home;
-				break;				
-		}
-		document.getElementById('content').innerHTML = contentToReturn; 
-	}
-	</script> 
 
-<body onload="getPageContent('home')">
-   
-            <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#" onclick="getPageContent('home')">
-                        Início
-                    </a>
-                </li>
-                <li>
-                    <a href="#" onclick="getPageContent('aboutus')">
-                        A professora
-                    </a>
-                </li>
-                <li>
-                    <a href="#" onclick="getPageContent('services')">
-                        Nosso Trabalho
-                    </a>
-                </li>
-                <li>
-                    <a href="#" onclick="getPageContent('contact')">
-                        Contato
-                    </a>
-                </li>
-            </ul>
-            <iframe src="https://giphy.com/embed/WTRvyrneui9L58fJcb" width="30%" height="30%" style="position:relative;" ;frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/stickers/transparent-estudar-studyanaluiza-WTRvyrneui9L58fJcb"></a></p>
-            </nav>
- 
-    <div class="body"><p style="margin-left: 90px;" id="content"><p></div>
-    
 
-    <script type="module" src="/spa.js"></script>
-    </body>
-    </html>
