@@ -7,4 +7,4 @@ Nossa solução inclui um formulário interativo que permite a persistência das
 
 Esta plataforma serve como um ponto de encontro entre a professora Isa e aqueles que buscam aulas particulares.
 
-link:Acesse aqui[https://daianevieira07.github.io/PI/#]
+[Acesse aqui](https://daianevieira07.github.io/PI/#)
